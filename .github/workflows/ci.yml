@@ -1,14 +1,8 @@
-name: CI
+name: ci
 on: [push, pull_request]
-
 jobs:
-  test:
+  smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - run: python -m py_compile src/*.py
-      - run: pip install flake8 && flake8 src/ --max-line-length=100
+      - run: make smoke

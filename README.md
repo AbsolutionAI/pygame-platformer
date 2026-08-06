@@ -38,3 +38,7 @@ Edit `src/levels.py` to design new levels using the tile character map:
 ## License
 
 MIT
+
+## Aspen Grove
+Standalone product package (**MIT**). Meta mesh: [aspen-grove](https://github.com/AbsolutionAI/aspen-grove).  
+Third-party: `THIRD_PARTY.md`. Run `make smoke`.
